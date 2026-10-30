@@ -22,11 +22,11 @@ The empty `.nojekyll` file tells GitHub Pages to serve the files without Jekyll 
 - `index.html`: biography, research, publications, background, contact links, metadata.
 - `styles.css`: color palette, spacing, typography, responsive design.
 - `script.js`: mobile navigation, expanding research cards, and the footer year.
-- `assets/figures/`: research figures from the final NEST interview presentation, plus the actual CARLA frame used in the opening section.
+- `assets/figures/`: research-method diagrams and the editable SVG traffic interaction in the opening section.
 - `assets/videos/`: three original CARLA simulation videos, plus lightweight poster images.
 - `assets/Srajan_Goyal_Academic_CV.pdf`: a public-facing version of the academic CV with its references section removed.
 
-The page uses Google Fonts when available, with local system-font fallbacks. The opening image is an unaltered split-camera frame from a supplied CARLA recording, not an illustrative road graphic.
+The page uses Google Fonts when available, with local system-font fallbacks. The opening figure is an editable vector schematic (`assets/figures/overtaking-interaction.svg`), not a simulation snapshot. It illustrates an ego intending to pass stationary car2 while policy-controlled car1 approaches in the adjacent lane. The dashed ego path denotes an intended manoeuvre, not a prescribed ADS trajectory or a reconstruction of one of the videos. The adjacent link leads to the actual CARLA recordings.
 
 ### Research section
 
@@ -63,7 +63,7 @@ To replace a video, use the same path or update the `<source src>` in `index.htm
 - [ ] Confirm that the five research figures are the ones you want to publish from the NEST talk.
 - [ ] Optionally add a profile photograph and GitHub link. Scholar, ORCID and LinkedIn URLs are taken from the academic CV.
 - [ ] Decide whether to retain the visiting researcher/background and earlier-publication details.
-- [ ] Remove the top "Website preview" banner when finalizing.
+- [x] Remove the preview banner and presentation/preparation notes from the public page.
 - [ ] Update search and social metadata if you change the site title or main research summary.
 
 ## Research and publication data used
@@ -78,4 +78,4 @@ The main personal details, chronology, research interests, earlier publications,
 
 The four highlighted publications are those most relevant to the current PhD. Six other works from the CV are in an expandable section. A 2026 author PDF link was transferred from the submitted CV but could not be independently fetched during this update.
 
-The five methodology images were taken from the user's `NEST_Interview_20min_OrderedBackups.pdf` (slides 3, 6, 12, 17 and 19). Slides 12 and 19 are now diagram-only crops: their old slide titles, footer and explanatory text are not displayed. The contract figure has the editable HTML title “Contract-based failure analysis.” The ongoing-research text draws on the mismatch-driven refinement discussion on slide 20 without reproducing its flow diagram. The opening CARLA image is the frame at 3.375 seconds of `P_FRONT_MID-eta0.9-ClearNoon-1.mp4`. All three video files are supplied originals.
+The five methodology images were taken from the user's `NEST_Interview_20min_OrderedBackups.pdf` (slides 3, 6, 12, 17 and 19). Slides 12 and 19 are diagram-only crops: their old slide titles, footer and explanatory text are not displayed. The contract figure has the editable HTML title “Contract-based failure analysis.” The ongoing-research text draws on the mismatch-driven refinement discussion on slide 20 without reproducing its flow diagram. These provenance details are maintained here for the site owner, not presented as website copy. The opening traffic schematic was created specifically for the website. All three video files are supplied originals.
