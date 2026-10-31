@@ -19,11 +19,11 @@ The empty `.nojekyll` file tells GitHub Pages to serve the files without Jekyll 
 
 ### Update an existing deployment
 
-For the v8 update, the smaller `academic-homepage-update-v8.zip` contains the updated HTML, current stylesheet, revised public CV, README and `.nojekyll`. It includes the preceding v6 and v7 changes, so it works whether or not those updates have already been uploaded. Extract it, then drag its **contents** (not the enclosing folder or ZIP) into **Add file → Upload files** at the repository root, and commit them together. GitHub replaces same-path files while leaving the videos and other existing assets untouched. The complete website is in `academic-homepage-github-pages-v8.zip`.
+For the v9 update, the smaller `academic-homepage-update-v9.zip` contains the updated HTML, current stylesheet, revised public CV, README and `.nojekyll`. It includes the preceding v6, v7 and v8 changes, so it works whether or not those updates have already been uploaded. Extract it, then drag its **contents** (not the enclosing folder or ZIP) into **Add file → Upload files** at the repository root, and commit them together. GitHub replaces same-path files while leaving the videos and other existing assets untouched. The complete website is in `academic-homepage-github-pages-v9.zip`.
 
 Keep an existing `CNAME` file when using a custom domain. After committing, wait for the corresponding **pages build and deployment** run to succeed before checking the live site. A commit is not the same as a completed deployment. If needed, hard-refresh the browser with Ctrl+Shift+R.
 
-The stylesheet and CV links use the query suffix `?v=8` so a browser requests the current assets after the new HTML has deployed. The underlying filenames remain unchanged.
+The stylesheet link uses the query suffix `?v=9` so a browser requests the updated typography after the new HTML has deployed. The unchanged CV retains `?v=8`. The underlying filenames remain unchanged.
 
 ## Edit content
 
@@ -37,6 +37,8 @@ The stylesheet and CV links use the query suffix `?v=8` so a browser requests th
 The page uses Google Fonts when available, with local system-font fallbacks. The opening figure is an editable vector schematic (`assets/figures/overtaking-interaction.svg`), not a simulation snapshot. It illustrates an ego intending to pass stationary car2 while policy-controlled car1 approaches in the adjacent lane. The dashed ego path denotes an intended manoeuvre, not a prescribed ADS trajectory or a reconstruction of one of the videos. The adjacent link leads to the actual CARLA recordings.
 
 The introduction names Dr. Stefano Tonetta as supervisor. The institutional address `sgoyal@fbk.eu` is visible in the header, introduction and contact section, with working email links. The scenario link is a larger, high-contrast button.
+
+Explanatory paragraphs and lists use one shared reading size, `--text-reading: 1.0625rem` (17px with the browser's standard 16px root size), matching the introductory biography. This applies to research interests, contribution cards and expanded explanations, scenario descriptions, publications, background and contact text. The reading size is retained on phones rather than reduced. Line height, text contrast and responsive card spacing support the larger type. Headings remain distinct; brief labels, dates and figure captions use smaller secondary sizes. The v9 update changes webpage presentation only, not the research content, CV or media.
 
 The Research Perspective statement is shortened from the paragraph supplied by the owner: “Autonomy is not just about making machines more capable. It is about making our confidence in them more deserved—through evidence and accountability.” It is presented as a research perspective without attribution to a historical figure. It expresses a research motivation, not a claim of unconditional safety guarantees.
 
