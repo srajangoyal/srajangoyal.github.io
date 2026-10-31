@@ -8,14 +8,22 @@ Open `index.html` in a web browser, or serve the extracted directory with any st
 
 ## Publish to GitHub Pages
 
-1. Create a public repository named `YOUR_GITHUB_USERNAME.github.io`.
+1. Use the public repository `srajangoyal/srajangoyal.github.io`.
 2. Unzip the download and copy its website files (`index.html`, `styles.css`, `script.js`, `.nojekyll`, and `assets/`) to the root of that repository (so `index.html` is at the root). If you are using the development project, copy the **contents** of `dist/` instead.
 3. Commit and push the changes to `main`.
 4. In repository **Settings → Pages**, select **Deploy from a branch**, `main`, `/ (root)`.
-5. Visit `https://YOUR_GITHUB_USERNAME.github.io` after deployment completes.
+5. Visit `https://srajangoyal.github.io/` after deployment completes.
 
 No npm, Jekyll, Hugo, or bundler is required.
 The empty `.nojekyll` file tells GitHub Pages to serve the files without Jekyll processing.
+
+### Update an existing deployment
+
+For the v8 update, the smaller `academic-homepage-update-v8.zip` contains the updated HTML, current stylesheet, revised public CV, README and `.nojekyll`. It includes the preceding v6 and v7 changes, so it works whether or not those updates have already been uploaded. Extract it, then drag its **contents** (not the enclosing folder or ZIP) into **Add file → Upload files** at the repository root, and commit them together. GitHub replaces same-path files while leaving the videos and other existing assets untouched. The complete website is in `academic-homepage-github-pages-v8.zip`.
+
+Keep an existing `CNAME` file when using a custom domain. After committing, wait for the corresponding **pages build and deployment** run to succeed before checking the live site. A commit is not the same as a completed deployment. If needed, hard-refresh the browser with Ctrl+Shift+R.
+
+The stylesheet and CV links use the query suffix `?v=8` so a browser requests the current assets after the new HTML has deployed. The underlying filenames remain unchanged.
 
 ## Edit content
 
@@ -24,11 +32,19 @@ The empty `.nojekyll` file tells GitHub Pages to serve the files without Jekyll 
 - `script.js`: mobile navigation, expanding research cards, and the footer year.
 - `assets/figures/`: research-method diagrams and the editable SVG traffic interaction in the opening section.
 - `assets/videos/`: three original CARLA simulation videos, plus lightweight poster images.
-- `assets/Srajan_Goyal_Academic_CV.pdf`: a public-facing version of the academic CV with its references section removed.
+- `assets/Srajan_Goyal_Academic_CV.pdf`: public academic CV, with Education followed by Research and Engineering Experience, then Publications. The references section is omitted.
 
 The page uses Google Fonts when available, with local system-font fallbacks. The opening figure is an editable vector schematic (`assets/figures/overtaking-interaction.svg`), not a simulation snapshot. It illustrates an ego intending to pass stationary car2 while policy-controlled car1 approaches in the adjacent lane. The dashed ego path denotes an intended manoeuvre, not a prescribed ADS trajectory or a reconstruction of one of the videos. The adjacent link leads to the actual CARLA recordings.
 
+The introduction names Dr. Stefano Tonetta as supervisor. The institutional address `sgoyal@fbk.eu` is visible in the header, introduction and contact section, with working email links. The scenario link is a larger, high-contrast button.
+
+The Research Perspective statement is shortened from the paragraph supplied by the owner: “Autonomy is not just about making machines more capable. It is about making our confidence in them more deserved—through evidence and accountability.” It is presented as a research perspective without attribution to a historical figure. It expresses a research motivation, not a claim of unconditional safety guarantees.
+
 ### Research section
+
+Research interests use four topic-led bullet points, combining personal beliefs (“I believe”), methods developed (“I develop”), and open research directions (“I am interested in” and “I investigate”). The topics are formal verification, adaptive scenario generation, runtime failure analysis, and probabilistic model refinement. The linked [Sagar Malhotra homepage](https://countinglogic.github.io/) informed the topic-plus-explanation style, not the research claims.
+
+Adaptive testing is described as an existing contribution: “I have developed adaptive testing methods that respond to the ADS during execution.” The experience heading is “Research and Engineering Experience” throughout the current website and public CV.
 
 The three main contributions have expandable explanations:
 
@@ -57,18 +73,18 @@ To replace a video, use the same path or update the `<source src>` in `index.htm
 - [ ] Confirm the name, affiliations, thesis title, and short bio.
 - [ ] Verify the more technical research project summaries accurately reflect your intended emphasis.
 - [ ] Check the publication entries and confirm that the SEFM 2026 author-PDF link remains publicly available.
-- [x] Remove academic referees' contact details from the public PDF: the references section was redacted, including its underlying PDF text.
-- [ ] Confirm the personal email address in the public CV is the address you want displayed.
+- [x] Remove academic referees' contact details from the public CV, including unused referee-email hyperlink relationships.
+- [x] Display `sgoyal@fbk.eu` on the homepage and in the CV, as requested by the owner. The CV also retains the original personal email.
 - [x] Update `collision.mp4` using the owner's explanation of the car1-induced hazard and collision with static car2.
 - [ ] Confirm that the five research figures are the ones you want to publish from the NEST talk.
 - [ ] Optionally add a profile photograph and GitHub link. Scholar, ORCID and LinkedIn URLs are taken from the academic CV.
-- [ ] Decide whether to retain the visiting researcher/background and earlier-publication details.
+- [ ] Decide whether to retain the visiting PhD/background and additional-publication details.
 - [x] Remove the preview banner and presentation/preparation notes from the public page.
 - [ ] Update search and social metadata if you change the site title or main research summary.
 
 ## Research and publication data used
 
-The main personal details, chronology, research interests, earlier publications, social URLs, and CV PDF come from the finalized `Srajan_Goyal_TU_Wien_Academic_CV_rev11.pdf` prepared for the NEST application in September 2026. The research-interest paragraph matches the CV text.
+The main personal details, chronology, additional publications and social URLs come from the finalized `Srajan_Goyal_TU_Wien_Academic_CV_rev11.pdf` and corresponding DOCX prepared for the NEST application in September 2026. The webpage research-interest bullets expand the owner's established research description. The public CV was updated from the DOCX to move experience before publications, retain the five-page academic layout, correct the approved role titles, and add the institutional email; publication entries were preserved unchanged. The experience heading was subsequently simplified to “Research and Engineering Experience.” The original application files were not modified.
 
 - SEFM 2026 accepted paper: [conference's accepted-papers list](https://sefm-conference.github.io/2026/acceptedpapers/).
 - Science of Computer Programming 2025: [DOI](https://doi.org/10.1016/j.scico.2024.103253).

@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f8faf9" />
     <meta name="description" content="Srajan Goyal — PhD Candidate developing formally guided scenario generation and simulation-based validation methods for AI-based autonomous driving systems." />
     <title>Srajan Goyal — Research</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=8" />
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -22,7 +22,7 @@
           <a href="#cv">CV</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="header-contact" href="mailto:srajan.goyal@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <a class="header-contact" href="mailto:sgoyal@fbk.eu">sgoyal@fbk.eu <span aria-hidden="true">↗</span></a>
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false">
           <span></span><span></span>
         </button>
@@ -37,8 +37,9 @@
         <div class="hero-copy" id="about">
           <div class="eyebrow"><span class="eyebrow-line"></span> PHD CANDIDATE · UNIVERSITY OF TRENTO</div>
           <h1 id="hero-title">Making autonomous systems <em>more trustworthy.</em></h1>
-          <p class="hero-lead">I'm <strong>Srajan Goyal</strong>, a PhD Candidate at the University of Trento and Fondazione Bruno Kessler, working on formal verification and simulation-based validation of AI-based Autonomous Driving Systems (ADS).</p>
+          <p class="hero-lead">I'm <strong>Srajan Goyal</strong>, a PhD Candidate at the University of Trento and Fondazione Bruno Kessler, supervised by <strong>Dr. Stefano Tonetta</strong>. I work on formal verification and simulation-based validation of AI-based Autonomous Driving Systems (ADS).</p>
           <p class="hero-detail">I develop methods that turn safety objectives into challenging test scenarios, execute them against autonomous systems in closed-loop simulation, and analyze the resulting behaviors and failures.</p>
+          <p class="hero-email"><span>Email</span> <a href="mailto:sgoyal@fbk.eu">sgoyal@fbk.eu</a></p>
           <div class="hero-actions">
             <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
             <a class="text-link" href="#publications">View publications <span aria-hidden="true">↗</span></a>
@@ -53,7 +54,7 @@
           <figcaption>
             <strong>A challenging overtaking interaction.</strong>
             <p>The ego attempts to pass stationary car2 while policy-controlled car1 approaches in the adjacent lane. Generated scenarios challenge how the AI-based ADS responds.</p>
-            <a href="#simulations">Watch the scenarios <span aria-hidden="true">↗</span></a>
+            <a class="scenario-watch" href="#simulations"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 6.5 13.5 10 8 13.5Z" fill="currentColor"/></svg>Watch the scenarios <span aria-hidden="true">↗</span></a>
           </figcaption>
         </figure>
       </section>
@@ -73,7 +74,24 @@
           <div><p class="section-kicker">01 / RESEARCH</p><h2>Research that connects <em>models and real-world systems.</em></h2></div>
           <p class="section-aside">How can we generate, execute, and analyze safety-critical scenarios systematically, and what reliability claims does the resulting evidence support?</p>
         </div>
-        <div class="research-statement"><span>RESEARCH INTERESTS</span><p>My work combines symbolic and probabilistic verification, assume–guarantee contracts and closed-loop simulation, with applications to autonomous driving and space robotics. My interests include formal methods for AI safety, specification-guided evaluation, behavioural monitoring and adversarial testing for autonomous systems.</p></div>
+        <div class="research-perspective">
+          <p class="perspective-label">RESEARCH PERSPECTIVE</p>
+          <blockquote>
+            <p>“Autonomy is not just about making machines more capable. It is about making our <em>confidence in them more deserved</em>—through evidence and accountability.”</p>
+          </blockquote>
+        </div>
+        <section class="research-statement" aria-labelledby="research-interests-title">
+          <h3 id="research-interests-title">RESEARCH INTERESTS</h3>
+          <div class="research-interests-copy">
+            <p>My research interests span formal methods, autonomous systems and AI safety:</p>
+            <ul class="research-interests-list">
+              <li><strong>Formal verification of AI-enabled systems.</strong> I believe confidence in AI-enabled systems should be supported by explicit specifications and evidence. I investigate how formal verification and closed-loop simulation can be combined to assess their behaviour and safety.</li>
+              <li><strong>Systematic and adaptive scenario generation.</strong> I develop methods that turn safety and coverage objectives into abstract traffic interaction scenarios, then concretize them into executable tests that challenge an AI-based ADS. I have developed adaptive testing methods that respond to the ADS during execution.</li>
+              <li><strong>Runtime monitoring and failure analysis.</strong> I believe a failed test should help explain more than whether a requirement was violated. I use temporal logic and assume–guarantee contracts to relate observed behaviour to system requirements and component expectations.</li>
+              <li><strong>Probabilistic verification and model refinement.</strong> I am interested in how uncertainty influences hazardous behaviour. I develop policy-guided tests using probabilistic model checking, and investigate how simulation feedback can refine Markov decision processes (MDPs), observation matching and action concretization.</li>
+            </ul>
+          </div>
+        </section>
         <div class="research-grid">
           <article class="research-card feature-card">
             <div class="card-top"><span class="card-number">01</span><span class="card-symbol" aria-hidden="true">↗</span></div>
@@ -224,7 +242,7 @@
             </article>
           </div>
           <details class="other-publications">
-            <summary>Other publications and earlier work <span>6 entries <b aria-hidden="true">+</b></span></summary>
+            <summary>Other publications <span>6 entries <b aria-hidden="true">+</b></span></summary>
             <div class="other-publication-list">
               <p><strong>2023 · ASTRA.</strong> S. Fratini, P. Fleith, N. Policella, A. Griggio, S. Tonetta, S. Goyal, et al. <em>Verification and Validation of Autonomous Systems with Embedded AI: The VIVAS Approach.</em></p>
               <p><strong>2023 · AII / Studies in Computational Intelligence.</strong> M. Bozzano, R. Bussola, M. Cristoforetti, S. Goyal, et al. <em>RobDT: AI-enhanced Digital Twin for Space Exploration Robotic Assets.</em> <a href="https://doi.org/10.1007/978-3-031-25755-1_12" target="_blank" rel="noopener noreferrer">DOI ↗</a></p>
@@ -239,7 +257,7 @@
       </section>
 
       <section class="section container cv-section" id="cv">
-        <div class="section-head"><div><p class="section-kicker">03 / BACKGROUND</p><h2>Beyond the <em>papers.</em></h2></div><p class="section-aside">Research in formal methods builds on earlier work in autonomous robotics, control, modelling, and engineering validation.</p></div>
+        <div class="section-head"><div><p class="section-kicker">03 / BACKGROUND</p><h2>Beyond the <em>papers.</em></h2></div><p class="section-aside">Research in formal methods builds on my work in autonomous robotics, control, modelling, and engineering validation.</p></div>
         <div class="background-grid">
           <div class="background-list">
             <div class="background-entry"><span class="background-icon">↗</span><div><h3>PhD Candidate in Computer Science <span>· Nov 2022 – present</span></h3><p>University of Trento and Fondazione Bruno Kessler, Italy · Advisor: Dr. Stefano Tonetta · Expected completion: January 2027</p><p class="thesis-line">Thesis: <em>Simulation-based Verification and Validation of AI-enhanced Autonomous Driving Systems</em></p></div></div>
@@ -247,9 +265,9 @@
             <div class="background-entry"><span class="background-icon">↗</span><div><h3>MSc in Automotive Technology <span>· 2014 – 2016</span></h3><p>Eindhoven University of Technology, Netherlands · Control Systems Technology</p></div></div>
             <div class="background-entry"><span class="background-icon">↗</span><div><h3>BEng in Mechanical Engineering <span>· 2008 – 2012</span></h3><p>VIT University, Vellore, India</p></div></div>
           </div>
-          <aside class="cv-card"><div class="cv-document" aria-hidden="true"><span></span><span></span><span></span><span></span><i>CV</i></div><div><p class="cv-card-eyebrow">ACADEMIC CURRICULUM VITAE</p><h3>Research, publications and experience.</h3><p>Academic CV covering publications, education, research and engineering experience, and scientific activities.</p><a class="cv-download" href="assets/Srajan_Goyal_Academic_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV (PDF) ↓</a></div></aside>
+          <aside class="cv-card"><div class="cv-document" aria-hidden="true"><span></span><span></span><span></span><span></span><i>CV</i></div><div><p class="cv-card-eyebrow">ACADEMIC CURRICULUM VITAE</p><h3>Research, publications and experience.</h3><p>Academic CV covering education, research and engineering experience, publications, and scientific activities.</p><a class="cv-download" href="assets/Srajan_Goyal_Academic_CV.pdf?v=8" target="_blank" rel="noopener noreferrer">Download CV (PDF) ↓</a></div></aside>
         </div>
-        <div class="experience-note"><span>EARLIER RESEARCH &amp; ENGINEERING</span><div class="experience-list">
+        <div class="experience-note"><span>RESEARCH &amp; ENGINEERING EXPERIENCE</span><div class="experience-list">
           <p><strong>Research Engineer</strong> · FBK, Italy <span>ESA RobDT and VIVAS · 2021–2022</span></p>
           <p><strong>Research Engineer</strong> · Flanders Make, Belgium <span>2017–2020</span></p>
           <p><strong>MSc Researcher</strong> · TNO Automotive, Netherlands <span>2015–2016</span></p>
@@ -260,7 +278,7 @@
       <section class="contact-section" id="contact">
         <div class="container contact-inner">
           <div><p class="section-kicker">04 / CONNECT</p><h2>Let's explore <em>what's next.</em></h2><p>I welcome conversations about formal methods, trustworthy AI, autonomous systems, and potential research collaborations.</p></div>
-          <div class="contact-actions"><a class="button button-light" href="mailto:srajan.goyal@gmail.com">Send me an email <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=9_y-G7sAAAAJ" target="_blank" rel="noopener noreferrer">Scholar ↗</a><a href="https://orcid.org/0009-0005-2189-7026" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://www.linkedin.com/in/srajangoyal/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div>
+          <div class="contact-actions"><a class="button button-light contact-email" href="mailto:sgoyal@fbk.eu">sgoyal@fbk.eu <span aria-hidden="true">↗</span></a><div class="social-links"><a href="https://scholar.google.com/citations?hl=en&amp;user=9_y-G7sAAAAJ" target="_blank" rel="noopener noreferrer">Scholar ↗</a><a href="https://orcid.org/0009-0005-2189-7026" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://www.linkedin.com/in/srajangoyal/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div>
         </div>
       </section>
     </main>
